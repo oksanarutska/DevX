@@ -3,6 +3,7 @@ class Alert {
         this.type = type;
         this.money = money;
         this.date = date;
+        this.to = to
 
 
     }
@@ -20,7 +21,7 @@ class Alert {
 
           <div class="wall__item-content_main"><span class="wall__item-content_main__text-danger">${this.money}</span>
             on ${this.date}</span>
-            <span class="wall__item-content_main__description"> ${this.title}</span>
+            <span class="wall__item-content_main__description"> ${this.to}</span>
           </div>
         </div>
       

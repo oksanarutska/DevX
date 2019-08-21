@@ -1,0 +1,75 @@
+
+
+document.querySelector('.wall__item-actions__delete').addEventListener('click', function (e){
+   var target = e.currentTarget;
+
+    var elem = document.querySelector('.wall__item wall__item-event');
+    target.elem.parentNode.removeChild(elem);
+});
+
+
+
+var items  = [
+    {
+        type: 'post',
+        author: 'Guy Mariano',
+        text: 'This Metric is a key...',
+        created: '21/08/2019',
+        insightfulCount: 0
+    },
+
+    {
+        type: 'event',
+        title: 'Spring Break',
+        severity: 1,
+        from: '20/08/2019',
+        to: '21/08/2019',
+    },
+
+
+    {
+        type: 'event',
+        title: '@tferris Twitter Mention',
+        severity: 2,
+        from: '20/08/2019',
+        to: '21/08/2019',
+    },
+
+    {
+        type: 'alert',
+        money: 55470,
+        severity: 2,
+        date: '21/08/2019 10:00 AM',
+        title: 'is more than 10% above or below same time last fiscal quater'
+    },
+];
+
+
+
+var post = new Post(items.type, items.author, items.text, items.created, items.insightfulCount);
+
+document.querySelector('#commentPost').addEventListener('click', function (e) {
+    var comment = document.getElementsByTagName('textarea').value;
+    items.text = comment;
+    addElement()
+});
+
+function addElement(items) {
+   const container =  document.querySelector('.wall-main');
+    container.innerHTML = '';
+    items.forEach((item, index)=>{
+       var 
+    });
+
+}
+document.querySelector('#post').onclick = function (e) {
+    return items.type = 'post'
+};
+
+function creatElement() {
+
+    if(items.type === 'post'){
+       return post.renderPost();
+    }
+
+}

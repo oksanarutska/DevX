@@ -19,7 +19,7 @@ gulp.task('assets', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('./src/*.js*')
+    return gulp.src('./src/**/*.js*')
         .pipe(gulp.dest(paths.public))
         .pipe(browserSync.reload({
             stream: true

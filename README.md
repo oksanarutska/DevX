@@ -1,7 +1,7 @@
 # DevX
 
-[Demo Wall](https://oksanarutska.github.io/DevX/www/public/index.html)
-[Demo Login ](https://oksanarutska.github.io/DevX/www/public/login.html)
+- [Demo Wall](https://oksanarutska.github.io/DevX/www/public/index.html)
+- [Demo Login ](https://oksanarutska.github.io/DevX/www/public/login.html)
 ## Technology
 - scss
 - js
